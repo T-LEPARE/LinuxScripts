@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = linux
+
+[Action]
+Description = Signing updated EFI and kernel files...
+When = PostTransaction
+Exec = /usr/local/bin/sign-efi.sh
